@@ -1,0 +1,120 @@
+body {
+  background-image: url("https://img.freepik.com/free-photo/background-gradient-lights_23-2149304986.jpg?t=st=1700203649~exp=1700204249~hmac=32de4babd6c19b53df570325bbd9d3f892ade9d25da0e28d20862a86c54590ac");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  height: 48px;
+  flex-direction: row;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+}
+
+.navbarOption:hover {
+  background-color: grey;
+  color: black;
+  height: auto;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.navbarOption {
+  margin-left: 20px;
+  transition: 0.2s;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.logo,
+.name {
+  width: max-content;
+  height: max-content;
+}
+
+.name {
+  margin-left: 20px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.loginbtn {
+  position: absolute;
+  right: 5px;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+}
+
+#loginbtn2 {
+  margin-left: 5px;
+  background-color: lightgreen;
+  border-radius: 20px;
+}
+
+.ifusername {
+  margin-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: gold;
+  border-radius: 50px;
+  height: 30px;
+  width: 60px;
+  font-size: 20px;
+}
+
+.sidePanelName {
+  margin-left: 50px;
+  margin-top: 10%;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  margin-bottom: 15px;
+}
+
+.sidePanel {
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  height: 0;
+  top: 48px;
+  left: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: hidden;
+  transition: 0.5s;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.closeBtn {
+  position: absolute;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  top: 20px;
+  right: 15px;
+  font-size: 20px;
+  padding: 5px;
+  text-align: right;
+}
+
+* {
+  cursor: default;
+}
