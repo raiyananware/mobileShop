@@ -1,0 +1,126 @@
+body {
+  background-image: url("https://img.freepik.com/free-photo/background-gradient-lights_23-2149304986.jpg?t=st=1700203649~exp=1700204249~hmac=32de4babd6c19b53df570325bbd9d3f892ade9d25da0e28d20862a86c54590ac");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.submarq {
+  height: max-content;
+  font-size: 40px;
+  background-color: crimson;
+  color: white;
+}
+
+.advertisment {
+  height: max-content;
+  width: max-content;
+  border-style: solid;
+  background-color: rgba(150, 75, 0, 1);
+}
+
+.advertismentImage,
+.Slogan {
+  width: 49%;
+  vertical-align: middle;
+}
+
+.image {
+  float: left;
+}
+
+.advertismentImage {
+  height: 100%;
+  margin-left: 30px;
+  margin-top: 25px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.459);
+}
+
+.slogan {
+  float: right;
+  text-align: center;
+  border-style: dotted;
+}
+
+.slogan1,
+.slogan2,
+.slogan3 {
+  position: absolute;
+  width: max-content;
+  border-radius: 10px;
+  font-size: 50px;
+  padding: 13px;
+  font-family: "Helvetica, sans-serif";
+  color: white;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.418);
+}
+
+.slogan1 {
+  top: 20%;
+  right: 25%;
+}
+
+.slogan2 {
+  top: 28%;
+  right: 15%;
+}
+
+.slogan3 {
+  top: 36%;
+  right: 10%;
+}
+
+.scroll-content {
+  margin-top: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-content::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.scroll-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.products {
+  display: flex;
+}
+
+.product {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  flex: 0 0 auto;
+  height: 220px;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+  margin-top: 5px;
+  text-align: center;
+  color: white;
+  border-color: gold;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.459);
+}
+
+.images {
+  height: 200px;
+  border-radius: 5px;
+}
+
+.slogans {
+  height: 100%;
+  border-color: white;
+}

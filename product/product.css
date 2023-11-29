@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contentBody {
+  margin-top: 10px;
+}
+
+.deviceImage2 {
+  height: 75%;
+  float: right;
+  image-rendering: crisp-edges;
+  border-radius: 10px;
+}
+.deviceImage {
+  width: 40%;
+  float: left;
+}
+
+.buy {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 3%;
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: grey;
+}
+
+.description {
+  color: rgb(250, 249, 246);
+  position: relative;
+  height: 90%;
+  width: 50%;
+  float: right;
+  font-size: 20px;
+}
+
+.deviceName {
+  margin: 10px;
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+  text-align: center;
+}
+
+.deviceDescription {
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: white;
+  padding: 5px;
+}
+
+.deviceAmount,
+.deviceQuantity,
+.deviceDescription {
+  margin: 10px;
+}

@@ -1,0 +1,102 @@
+<html>
+
+<head>
+  <title>sign-in</title>
+  <link rel="stylesheet" href="./signIn.css">
+  <script src="./signIn.js"></script>
+  <script src="../common functions/commmonFunction.js"></script>
+</head>
+
+<body>
+  <div class="mainBody" id="mainBody">
+    <div class="header" id="header">
+      <link rel="stylesheet" href="../navbar/navbar.css" />
+      <script src="../navbar/navbar.js"></script>
+      <div id="sidePanel" class="sidePanel">
+        <div class="sidePanelName" id="sidePanelName"></div>
+        <div class="closeBtn" id="closeBtn" onclick="closePanel()">x</div>
+        <div id="content" class="content"></div>
+      </div>
+      <div class="head">
+        <div class="logo">
+          <img alt="Logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSU9zdJvGS4TNgUNPcOXIu2pNmAGK5wkM1A&usqp=CAU"
+            width="150px" height="45px" />
+        </div>
+        <div class="navbar">
+          <a href="../home/home.html">
+            <div class="navbarOption">Home</div>
+          </a>
+          <div class="navbarOption" onclick="sidePanel(`About`)">About</div>
+          <div class="navbarOption" onclick="sidePanel(`Contact`)">
+            Contact
+          </div>
+          <div class="navbarOption" onclick="sidePanel(`Help`)">Help</div>
+          <div class="loginbtn">
+            <button class="loginbtn" id="loginbtn2" onclick="signInPage()">
+              <b>Sign-In</b>
+            </button>
+            <div class="ifusername" id="ifusername" hidden onclick="signOut()"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card">
+      <div class="subCard" id="subCard">
+
+        <div class="signIn" id="signIn">
+          <h2 id="header" class="header">Sign-In</h2>
+          <div class="inputData">
+            <div class="data">
+              <input type="text" class="username" id="username1" placeholder="Username" />
+            </div>
+            <div class="data">
+              <input type="password" name="password" id="password1" class="password" placeholder="Password"><br><br>
+              <span class="forgotPassword" id="forgotPassword" onclick="forgetPass()">Forgot Password</span>
+            </div>
+            <div class="data">
+              <button class="sign_In" id="sign_In" onclick="logIn()">Sgn-In</button>
+            </div>
+          </div>
+          <div>Don't have an account.<span class="createAcc" style="color: green; opacity: 0.5;"> Sign-Up</span></div>
+        </div>
+        <div class="signUp" id="signUp" hidden>
+          <h2 id="header" class="header">Sign-Up</h2>
+          <div class="inputData">
+            <div class="data">
+              <input type="text" class="username" id="username2" placeholder="Username" />
+            </div>
+            <div class="data">
+              <input type="password" name="password" id="password2" class="password" placeholder="Password">
+            </div>
+            <div class="data">
+              <button class="sign_Up" id="sign_Up" onclick="createAcc()">Sign-Up</button>
+            </div>
+          </div>
+          <div>Have an account.<span class="login" style="color: green;" onclick="signInCard()"> Sign-In</span></div>
+        </div>
+        <div class="forgetpass" id="forgetPass" hidden>
+          <h2 id="header" class="header">Forgot Password</h2>
+          <div class="inputData">
+            <div class="data">
+              <input type="text" class="username" id="username3" placeholder="Username" />
+            </div>
+            <div class="data">
+              <span class="question" id="question">Please type Text</span><br>
+              <input type="text" name="answer" id="answer" placeholder="Text"><br><br>
+              <div class="passAns" id="passAns"></div>
+            </div>
+            <div class="data">
+              <button class="sign_In" id="sign_In" onclick="getPass()">Get Password</button>
+            </div>
+          </div>
+          <div>Don't have an account.<span class="createAcc" style="color: green; opacity: 0.5;"> Sign-Up</span> or
+            <span class="createAcc" style="color: green;" onclick="signInCard()">Sign-In</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./navbar.css">
+  <script src="./navbar.js"></script>
+</head>
+
+<body>
+  <div class="head">
+    <div class="logo">
+      <img alt="Logo"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSU9zdJvGS4TNgUNPcOXIu2pNmAGK5wkM1A&usqp=CAU"
+        width="150px" height="45px" />
+    </div>
+    <div class="navbar">
+      <a style="text-decoration: none;" href="../home/home.html">
+        <div class="navbarOption">Home</div>
+      </a>
+      <div class="navbarOption" onclick="sidePanel(`About`)">About</div>
+      <div class="navbarOption" onclick="sidePanel(`Contact`)">Contact</div>
+      <div class="navbarOption" onclick="sidePanel(`Help`)">Help</div>
+    </div>
+    <div class="loginbtn">
+      <button class="loginbtn" onclick="setItem()">
+        <b>Sign-In</b>
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <script src="./product.js"></script>
+  <script src="../common functions/commmonFunction.js"></script>
+  <link rel="stylesheet" href="./product.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="mainBody">
+    <div class="header" id="header">
+      <link rel="stylesheet" href="../navbar/navbar.css" />
+      <script src="../navbar/navbar.js"></script>
+      <div id="sidePanel" class="sidePanel">
+        <div class="sidePanelName" id="sidePanelName"></div>
+        <div class="closeBtn" id="closeBtn" onclick="closePanel()">x</div>
+        <div id="content" class="content"></div>
+      </div>
+      <div class="head">
+        <div class="logo">
+          <img alt="Logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSU9zdJvGS4TNgUNPcOXIu2pNmAGK5wkM1A&usqp=CAU"
+            width="150px" height="45px" />
+        </div>
+        <div class="navbar">
+          <a href="../home/home.html">
+            <div class="navbarOption">Home</div>
+          </a>
+          <div class="navbarOption" onclick="sidePanel(`About`)">About</div>
+          <div class="navbarOption" onclick="sidePanel(`Contact`)">
+            Contact
+          </div>
+          <div class="navbarOption" onclick="sidePanel(`Help`)">Help</div>
+          <div class="loginbtn">
+            <button class="loginbtn" id="loginbtn2" onclick="signInPage()">
+              <b>Sign-In</b>
+            </button>
+            <div class="ifusername" id="ifusername" hidden onclick="signOut()"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentBody" id="contentBody">
+      <div class="deviceImage" id="deviceImage">
+        <img class="deviceImage2" id="deviceImage2"></img>
+      </div>
+      <button class="buy" id="buy" onclick="buy()">Buy</button>
+      <div class="description" id="description">
+        <div class="deviceName" id="deviceName"></div>
+        <div class="deviceAmount" id="deviceAmount">Amount:- </div>
+        <div class="deviceQuantity" id="deviceQuantity"></div>
+        <div class="deviceDescription" id="deviceDescription"></div>
+
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

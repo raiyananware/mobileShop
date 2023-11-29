@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product Carousel</title>
+
+  <style>
+    body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.carousel-container {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.products {
+  display: flex;
+}
+
+.product {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust the width as per your design */
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+  </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  const wrapper = document.querySelector('.carousel-wrapper');
+  const products = document.querySelectorAll('.product');
+
+  let currentIndex = 0;
+
+  updateScrollButtons();
+
+  nextBtn.addEventListener('click', function () {
+    if (currentIndex < products.length - 6) {
+      currentIndex++;
+      updateTransform();
+      updateScrollButtons();
+    }
+  });
+
+  prevBtn.addEventListener('click', function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateTransform();
+      updateScrollButtons();
+    }
+  });
+
+  function updateTransform() {
+    const translateValue = -currentIndex * 320; // Adjust the value based on your product width
+    wrapper.style.transform = `translateX(${translateValue}px)`;
+  }
+
+  function updateScrollButtons() {
+    nextBtn.disabled = currentIndex === products.length - 6;
+    prevBtn.disabled = currentIndex === 0;
+  }
+});
+
+
+
+</script>
+
+
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="products">
+        <div class="product">Product 1</div>
+        <div class="product">Product 2</div>
+        <div class="product">Product 3</div>
+        <div class="product">Product 4</div>
+        <div class="product">Product 5</div>
+        <div class="product">Product 6</div>
+        <div class="product">Product 7</div>
+        <div class="product">Product 8</div>
+        <div class="product">Product 9</div>
+        <div class="product">Product 10</div>
+        <div class="product">Product 11</div>
+        <div class="product">Product 12</div>
+        <div class="product">Product 13 </div>
+      </div>
+    </div>
+    <button class="prev-btn">&lt;</button>
+    <button class="next-btn">&gt;</button>
+  </div>
+  
+</body>
+</html>
