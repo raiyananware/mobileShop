@@ -21,6 +21,8 @@ function sidePanel(page_name) {
         document.getElementById("content").innerHTML = data[page_name];
       });
     }, 700);
+  } else if ((styleData != "0px") & (currentSidePanelName == page_name)) {
+    document.getElementById("sidePanel").style.height = "0px";
   }
 }
 

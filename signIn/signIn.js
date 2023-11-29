@@ -80,6 +80,12 @@ async function getPass() {
   if ((foundUser != null) & (text == "Text")) {
     ans.innerText = "Password is:- " + foundUser["password"];
   }
+  else if(foundUser==null){
+    alert("Username not Found")
+  }
+  else if((foundUser != null) & (text != "Text")){
+    alert("Please Enter Validation message")
+  }
 }
 
 function createAcc() {
