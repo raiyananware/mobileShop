@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  localStorage.removeItem("pageNumber");
+  sessionStorage.removeItem("pageNumber");
   const product = document.querySelectorAll(".product");
   var a = [];
   let phones = fetchData("../data/phones.json");
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   product.forEach((div) => {
     div.addEventListener("click", () => {
       const itemNumber = div.getAttribute("sampleData");
-      localStorage.setItem("indexNumber", itemNumber);
+      sessionStorage.setItem("indexNumber", itemNumber);
       window.location.replace(`../product/product.html`);
     });
   });

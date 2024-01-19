@@ -1,6 +1,6 @@
 function loggedIn(username) {
-  localStorage.setItem(`username`, username);
-  const pageNumber = localStorage.getItem("pageNumber");
+  sessionStorage.setItem(`username`, username);
+  const pageNumber = sessionStorage.getItem("pageNumber");
   if (pageNumber == null) {
     window.location.href = "../home/home.html";
   } else if (pageNumber != null) {

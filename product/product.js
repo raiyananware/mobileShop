@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  localStorage.setItem("pageNumber", 1);
-  const indexNumber = localStorage.getItem("indexNumber");
+  sessionStorage.setItem("pageNumber", 1);
+  const indexNumber = sessionStorage.getItem("indexNumber");
   let phones = fetchData("../data/phones.json");
   phones.then((data) => {
     const toUnit = "INR",
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function buy() {
-  let userData = localStorage.getItem("username");
+  let userData = sessionStorage.getItem("username");
   if (userData != null) {
     alert("Payment Gate way is not implemented yet and will be added shortly");
   } else if (userData == null) {

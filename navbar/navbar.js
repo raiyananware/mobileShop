@@ -35,12 +35,12 @@ function signInPage() {
 }
 
 function signOut() {
-  localStorage.clear();
+  sessionStorage.clear();
   window.location.href = "../home/home.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  let username = localStorage.getItem("username"),
+  let username = sessionStorage.getItem("username"),
     loginBtn = document.getElementById("loginbtn2"),
     usernamePresent = document.getElementById("ifusername");
 
